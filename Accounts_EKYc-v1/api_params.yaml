@@ -1,0 +1,53 @@
+environments:
+    - name: develop
+      configs:
+        endpoints:
+            production:
+                url: 'http://mcs-openbanking.openbanking-develop.svc.cluster.local:8080'
+            sandbox:
+                url: 'http://mcs-openbanking.openbanking-develop.svc.cluster.local:8080'
+        deploymentEnvironments:
+          - displayOnDevportal: true
+            deploymentEnvironment: Default
+              # deploymentVhost : localhost
+    - name: sit
+      configs:
+        endpoints:
+            production:
+                url: 'http://mcs-openbanking.openbanking-sit.svc.cluster.local:8080'
+            sandbox:
+                url: 'http://mcs-openbanking.openbanking-sit.svc.cluster.local:8080'
+        deploymentEnvironments:
+          - displayOnDevportal: true
+            deploymentEnvironment: Default
+              # deploymentVhost : gw-stb.fis-cp4d-dev.fis.com.vn
+    - name: uat
+      configs:
+        endpoints:
+            production:
+                url: 'http://mcs-openbanking.openbanking-uat.svc.cluster.local:8080'
+            sandbox:
+                url: 'http://mcs-openbanking.openbanking-uat.svc.cluster.local:8080'
+        deploymentEnvironments:
+          - displayOnDevportal: true
+            deploymentEnvironment: Default
+    - name: staging
+      configs:
+        endpoints:
+            production:
+                url: 'http://mcs-openbanking.openbanking-staging.svc.cluster.local:8080'
+            sandbox:
+                url: 'http://mcs-openbanking.openbanking-staging.svc.cluster.local:8080'
+        deploymentEnvironments:
+          - displayOnDevportal: true
+            deploymentEnvironment: Default
+    - name: production
+      configs:
+        endpoints:
+            production:
+                url: 'http://mcs-openbanking.openbanking-production.svc.cluster.local:8080'
+            sandbox:
+                url: 'http://mcs-openbanking.openbanking-production.svc.cluster.local:8080'
+        deploymentEnvironments:
+          - displayOnDevportal: true
+            deploymentEnvironment: Default
